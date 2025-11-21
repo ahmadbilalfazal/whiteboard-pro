@@ -1,0 +1,13 @@
+import express from 'express';
+import http from 'http';
+import { setupWS } from './wsHandler';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+app.post('/api/save', (req, res) => { res.status(200).json({ ok: true }); });
+const server = http.createServer(app);
+setupWS(server);
+const port = process.env.PORT || 3000;
+server.listen(port);

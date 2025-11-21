@@ -1,0 +1,8 @@
+html,body,#root { height:100%; margin:0; font-family:Inter,system-ui,Arial; }
+.app { display:flex; height:100vh; width:100vw; }
+.sidebar { width:320px; background:#f7f7f8; border-right:1px solid #e6e6e6; padding:12px; box-sizing:border-box; }
+.canvasWrap { flex:1; position:relative; display:flex; align-items:center; justify-content:center; }
+canvas { background:white; box-shadow:0 2px 6px rgba(0,0,0,0.06); border-radius:8px; }
+.toolbar { display:flex; gap:8px; margin-bottom:8px; }
+.chat { height:300px; overflow:auto; border:1px solid #e8e8e8; padding:8px; background:#fff; }
+.presence { display:flex; gap:8px; margin-top:8px; }
